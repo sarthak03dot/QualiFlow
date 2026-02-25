@@ -21,9 +21,9 @@ const seedDatabase = async () => {
 
         const user = await User.create({
             _id: new mongoose.Types.ObjectId('69799ba9934dbcc2bb7d485e'),
-            name: 'Sarthak Singh',
-            email: 'sarthak@gmail.com',
-            password: 'qwertyuiop',                   
+            name: 'John Alison',
+            email: 'john@qualiflow.com',
+            password: 'john1234',                   
         });
         const surveys = [
             {

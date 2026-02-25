@@ -87,7 +87,7 @@ const PrivateLayout = () => {
             <Box>
                 <Toolbar>
                     <Typography variant="h6" sx={{ fontWeight: 800, color: 'primary.main' }}>
-                        SURVEY FLOW
+                        QualiFlow
                     </Typography>
                 </Toolbar>
                 <Divider sx={{ opacity: 0.1 }} />

@@ -1,5 +1,5 @@
 {
-  "name": "survey-eligibility-flow-builder",
+  "name": "qualiflow",
   "version": "1.0.0",
   "private": true,
   "description": "A powerful full-stack application that enables users to visually build survey flows with logic-based eligibility rules.",
