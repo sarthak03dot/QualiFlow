@@ -7,20 +7,23 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          if (id.includes("node_modules")) {
-            if (id.includes("react")) {
-              return "react-vendor";
+          if (id.includes('node_modules')) {
+            if (id.includes('@mui/icons-material')) {
+              return 'mui-icons';
             }
-
-            if (id.includes("zod")) {
-              return "zod";
+            if (id.includes('@mui/material') || id.includes('@emotion')) {
+              return 'mui-core';
             }
-
-            if (id.includes("axios")) {
-              return "axios";
+            if (id.includes('@xyflow') || id.includes('reactflow')) {
+              return 'flow-core';
             }
-
-            return "vendor";
+            if (id.includes('framer-motion')) {
+              return 'framer-motion';
+            }
+            if (id.includes('react') || id.includes('react-dom') || id.includes('react-router')) {
+              return 'react-core';
+            }
+            return 'vendor';
           }
         },
       },
